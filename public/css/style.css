@@ -1,0 +1,20 @@
+.logo-img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 2s ease-in ;
+    }
+    
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 767px) {
+      .logo-img {
+        width: 180px;
+        height: 180px;
+      }
+    }

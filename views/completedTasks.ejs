@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Completed Tasks - TaskSpark</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <%- include('partials/header.ejs') %>
+
+    <div class="container my-4">
+        <h2 class="mb-4 text-success fw-bold text-center">✅ Completed Tasks</h2>
+
+        <% if (tasks.length === 0) { %>
+            <div class="alert alert-info text-center" role="alert">
+                No completed tasks yet.
+            </div>
+        <% } else { %>
+
+           <%- include('partials/tasks.ejs', { tasks: tasks }) %>
+
+        <% } %>
+
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

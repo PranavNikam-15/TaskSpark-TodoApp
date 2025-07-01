@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <!-- App Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/tasks">
+      <img src="/imgs/TodoLogo.png" alt="TaskSpark Logo" width="45" height="45" class="me-2">
+      <span class="h5 mb-0 fw-bold">TaskSpark</span>
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links - Centered -->
+    <div class="collapse navbar-collapse justify-content-right" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tasks/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tasks/completed">Completed-Task</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex" method="get" action="/tasks/search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchedTask" name="searchedTask">
+        <button class="btn btn-outline-dark mx-2" type="submit">Search</button>
+    </form>
+    <a href="/tasks/new" class="btn btn-outline-dark mx-2 my-2">Add Task</a>
+  </div>
+</nav>
