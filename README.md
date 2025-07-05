@@ -36,7 +36,7 @@ It helps users manage their tasks efficiently with features like email notificat
 
 ```bash
 git clone https://github.com/PranavNikam-15/TaskSpark-TodoApp.git
-cd task-spark
+cd TaskSpark-TodoApp
 ```
 
 ### 2. Install Dependencies :
